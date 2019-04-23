@@ -1,0 +1,132 @@
+.stepContent {
+  position: relative;
+  top: -20px;
+  margin-top: 16px;
+  text-align: center;
+  min-height: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 0;
+  display: block;
+  font-size: 15px;
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.11);
+  border-radius: 2px 0 0 0 2px 2px 2px;
+  /* background-color: #fafafa; */
+}
+
+.processSteps {
+  margin-top: 50px;
+}
+.steps-action {
+  margin-top: 24px;
+}
+
+.par {
+  text-align: center;
+}
+
+.nav {
+  position: relative;
+  top: 9px;
+  left: 40%;
+  overflow: hidden;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-left: 1px solid #e9e9e9;
+  border-top: 1px solid #e9e9e9;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
+  box-shadow:-1px -1px 0 #f0f0f0;
+  /* display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  font-size: 12px; */
+}
+
+.activeStep {
+  font-size: 40;
+  transform: translateY(-10px);
+}
+
+.stepFont {
+  font-size: 40;
+  transform: translateY(-10px);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.custStepFinish {
+  :global{
+    .rc-steps-step .rc-steps-head .rc-steps-head-inner{
+      height: 32px;
+      width:  32px;
+      margin-top: -8px;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    .rc-steps-step .rc-steps-head .rc-steps-head-inner > .rc-steps-icon {
+      top: 7px;
+    }
+
+    .rc-steps-step .rc-steps-main .rc-steps-title {
+      margin-top: 5px;
+    }
+  }
+}
+
+.custStepProcess {
+  :global{
+    .rc-steps-step .rc-steps-head .rc-steps-head-inner {
+      border-color: #008B41;
+      background-color: #008B41;
+      height: 42px;
+      width:  42px;
+      margin-top: -8px;
+      margin-left: 10px;
+    }
+
+    .rc-steps-step .rc-steps-head .rc-steps-head-inner > .rc-steps-icon {
+      top: 10px;
+      color: #fff;
+      font-size: 22px;
+    }
+
+    .rc-steps-step .rc-steps-main .rc-steps-title {
+      margin-top: -5px;
+    }
+  }
+}
+
+.custStepWait {
+  :global{
+    .rc-steps-step .rc-steps-head .rc-steps-head-inner {
+      border-color: #D8D8D8;
+      background-color: #D8D8D8;
+      height: 32px;
+      width:  32px;
+      margin-top: -3px;
+      margin-left: 10px;
+    }
+
+    .rc-steps-step .rc-steps-head .rc-steps-head-inner > .rc-steps-icon {
+      top: 2px;
+      color: #000;
+      font-size: 14px;
+    }
+  }
+}

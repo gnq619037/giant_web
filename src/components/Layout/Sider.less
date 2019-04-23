@@ -1,0 +1,115 @@
+.sider{
+  width: 210px;
+  background-color: #EFF0F2;
+  position: fixed;
+  top:110px;
+  bottom: 0px;
+  display: block;
+}
+
+.siderFold{
+  width: 20px;
+  position: fixed;
+  top:112px;
+}
+
+.maincss{
+  padding: 23px 0px 24px 61px;
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.97;
+  line-height: 21px;
+  width: 190px;
+  height: 60px;
+  float: left;
+}
+
+.backcss{
+  padding: 23px 0px 24px 32px;
+  font-size: 16px;
+  color: #000000;
+  opacity: 0.97;
+  line-height: 21px;
+  width: 190px;
+  height: 60px;
+  float: left;
+  cursor: pointer;
+}
+
+.ssbtn{
+  float: left;
+  width: 20px;
+  height: 48px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 15px 5px;
+  background-color: #D3D5D7;
+  cursor: pointer;
+}
+
+.siderli,.subdiv,.subli,.siderli_selected,.subli_selected{
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  text-shadow: none;
+  color:rgba(0, 0, 0, 0.65);
+
+  span:hover{
+    color:#108ee9
+  }
+}
+
+.siderli,.subdiv,.siderli_selected{
+  padding-left: 61px;
+}
+
+.siderli_selected{
+  background-color: #FBFBFC;
+}
+
+.siderli_selected,.subli_selected{
+  color: #000000;
+  span:hover{
+    color:#000000
+  }
+}
+
+.subli,.subli_selected{
+  padding-left: 70px;
+}
+
+.subli_selected{
+  background-color: #FBFBFC;
+}
+
+.siderli{
+  a{
+    text-decoration: none;
+  }
+}
+
+.li_icon{
+  position: absolute;
+  right: 0px;
+  width: 50px;
+  line-height: 40px;
+  -webkit-transform: scale(0.75) rotate(0deg);
+  cursor: pointer;
+}
+
+.badge{
+  span:hover{
+    color:#FFFFFF !important
+  }
+
+  :global{
+    .ant-badge{
+      vertical-align: top;
+      margin-top: 9px;
+    }
+  }
+}
